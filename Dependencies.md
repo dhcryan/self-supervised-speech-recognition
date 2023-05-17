@@ -50,5 +50,6 @@ cd ../..
 git clone -b v0.2 https://github.com/facebookresearch/wav2letter.git
 cd wav2letter/bindings/python
 export KENLM_ROOT_DIR=path/to/libs/kenlm/ && pip install -e .
+export HYDRA_FULL_ERROR=1
 cd ../../..
 ```

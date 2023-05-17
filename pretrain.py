@@ -44,7 +44,7 @@ def main():
     cmd = ["fairseq-hydra-train"]
     cmd.append("task.data=" + str(temp_dir))
     cmd.append("distributed_training.distributed_world_size=" + str(NUM_GPU))
-    cmd.append("+optimization.update_freq='[" + str(int(64/NUM_GPU)) + "]'")
+    # cmd.append("+optimization.update_freq='[" + str(int(64/NUM_GPU)) + "]'")
     
     if args.init_model != None:
         cmd.append("checkpoint.restore_file=" + os.path.abspath(args.init_model))

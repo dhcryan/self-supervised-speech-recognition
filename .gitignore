@@ -1,0 +1,9 @@
+*.pt
+*.txz
+libs/
+cudavenv/
+myvenv/
+nccl*
+outputs/
+runs/
+# config/
